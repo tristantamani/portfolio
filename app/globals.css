@@ -1,10 +1,44 @@
 @import "tailwindcss";
 
+/* Define dark mode variant for Tailwind v4 */
+@variant dark (&:where(.dark, .dark *));
+
 @theme {
+  /* Light Mode Colors */
   --color-background: #EEEEEE;
   --color-surface: #FFFFFF;
   --color-text-primary: #000000;
   --color-text-secondary: #666666;
+  --color-text-tertiary: #666666;
+  --color-border: #000000;
+  --color-border-light: #E5E7EB;
+  --color-border-medium: #D1D5DB;
+  --color-card-border: rgba(0, 0, 0, 0.1);
+  --color-icon-muted: #9CA3AF;
+  --color-footer-border: #E5E7EB;
+  --color-footer-text: #6B7280;
+  --color-input-bg: #F3F4F6;
+  --color-navbar-bg: rgba(255, 255, 255, 0.8);
+  --color-navbar-border: rgba(229, 231, 235, 0.5);
+  
+  /* Dark Mode Colors */
+  --color-dark-background: #0a0a0f;
+  --color-dark-surface: #1a1a25;
+  --color-dark-text-primary: #FFFFFF;
+  --color-dark-text-secondary: #A1A1AA;
+  --color-dark-text-tertiary: #A1A1AA;
+  --color-dark-border: #FFFFFF;
+  --color-dark-border-light: rgba(255, 255, 255, 0.1);
+  --color-dark-border-medium: rgba(255, 255, 255, 0.2);
+  --color-dark-card-border: rgba(255, 255, 255, 0.1);
+  --color-dark-icon-muted: #71717A;
+  --color-dark-footer-border: rgba(255, 255, 255, 0.1);
+  --color-dark-footer-text: #71717A;
+  --color-dark-input-bg: #27272a;
+  --color-dark-navbar-bg: rgba(26, 26, 37, 0.8);
+  --color-dark-navbar-border: rgba(255, 255, 255, 0.1);
+  
+  /* Fonts */
   --font-sans: var(--font-inter), system-ui, sans-serif;
   --font-poppins: var(--font-poppins), system-ui, sans-serif;
   --font-mono: var(--font-martian-mono), ui-monospace, monospace;
@@ -18,6 +52,13 @@ body {
   background-color: var(--color-background);
   color: var(--color-text-primary);
   font-family: var(--font-sans);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode class applied to html */
+html.dark body {
+  background-color: var(--color-dark-background);
+  color: var(--color-dark-text-primary);
 }
 
 /* Reduced motion support */

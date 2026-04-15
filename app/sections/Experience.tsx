@@ -43,8 +43,8 @@ export function Experience() {
             </div>
             <div>
               <h3 className="font-bold text-lg font-poppins mb-0">Big Pond Education PH</h3>
-              <p className="text-gray-600 font-mono mb-2">Backend Developer Intern</p>
-              <p className="text-gray-500 text-sm font-mono">June 2025 - July 2025</p>
+              <p className="text-text-secondary dark:text-dark-text-secondary font-mono mb-2">Backend Developer Intern</p>
+              <p className="text-text-tertiary dark:text-dark-text-tertiary text-sm font-mono">June 2025 - July 2025</p>
             </div>
           </div>
         </motion.div>

@@ -30,7 +30,7 @@ export function Contact() {
           transition={{ duration: 0.5, delay: 0.1, ease: [0.25, 0.1, 0.25, 1] }}
         >
           <h2 className="text-2xl md:text-3xl font-bold mb-4 font-poppins">Contact Me</h2>
-          <p className="text-gray-600 mb-12 font-mono">
+          <p className="text-text-secondary dark:text-dark-text-secondary mb-12 font-mono">
             Let's connect and explore opportunities together.
           </p>
 
@@ -39,7 +39,7 @@ export function Contact() {
               href="mailto:tristanandreitamani@gmail.com"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-2 px-3 py-3 bg-black text-white border border-black rounded-md hover:bg-black hover:text-white transition-colors"
+              className="inline-flex items-center gap-2 px-3 py-3 bg-black dark:bg-white text-white dark:text-black border border-black dark:border-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition-colors duration-300"
             >
               <Mail size={40} />
             </motion.a>
@@ -53,7 +53,7 @@ export function Contact() {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center gap-2 px-3 py-3 border border-black rounded-md hover:bg-black hover:text-white transition-colors"
+                  className="inline-flex items-center gap-2 px-3 py-3 border border-black dark:border-white rounded-md hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black dark:text-white transition-colors duration-300"
                 >
                   <Icon size={40} />
                 </motion.a>

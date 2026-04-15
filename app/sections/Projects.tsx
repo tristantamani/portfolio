@@ -118,9 +118,9 @@ export function Projects() {
                 {...cardProps}
                 variants={itemVariants}
                 whileHover={{ scale: 1.02 }}
-                className="group block bg-white rounded-lg border border-gray-300 overflow-hidden hover:shadow-lg transition-shadow"
+                className="group block bg-surface dark:bg-dark-surface rounded-lg border border-card-border dark:border-dark-card-border overflow-hidden hover:shadow-lg transition-shadow duration-300"
               >
-                <div className="relative aspect-video bg-gray-100">
+                <div className="relative aspect-video bg-gray-100 dark:bg-dark-bg">
                   <Image
                     src={project.screenshot}
                     alt={`${project.title} screenshot`}
@@ -132,10 +132,10 @@ export function Projects() {
                   <div className="flex items-center justify-between mb-2">
                     <h3 className="font-bold text-lg font-poppins">{project.title}</h3>
                     {isClickable && (
-                      <ExternalLink size={18} className="text-gray-400 group-hover:text-black transition-colors" />
+                      <ExternalLink size={18} className="text-icon-muted dark:text-dark-icon-muted group-hover:text-black dark:group-hover:text-white transition-colors duration-300" />
                     )}
                   </div>
-                  <p className="text-sm text-gray-600 font-poppins line-clamp-3">{project.description}</p>
+                  <p className="text-sm text-text-secondary dark:text-dark-text-secondary font-poppins line-clamp-3">{project.description}</p>
                 </div>
               </CardWrapper>
             )
@@ -149,7 +149,7 @@ export function Projects() {
           transition={{ duration: 0.5, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
           className="mt-20"
         >
-          <p className="text-gray-600 mb-8 font-mono text-center">
+          <p className="text-text-secondary dark:text-dark-text-secondary mb-8 font-mono text-center">
             Here are some of the tools I used to develop my projects
           </p>
 

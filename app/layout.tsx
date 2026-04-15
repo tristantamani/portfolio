@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter, Poppins, Martian_Mono } from 'next/font/google'
 import './globals.css'
+import { ThemeProvider } from './components/ThemeProvider'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -52,8 +53,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${poppins.variable} ${martianMono.variable}`}>
-      <body className="antialiased">{children}</body>
+    <html lang="en" className={`${inter.variable} ${poppins.variable} ${martianMono.variable}`} suppressHydrationWarning>
+      <body className="antialiased">
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   )
 }

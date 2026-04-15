@@ -28,7 +28,7 @@ export function Hero() {
             <p className="text-xl md:text-2xl mb-6 font-mono">
               Computer Science Student
             </p>
-            <p className="text-gray-600 mb-8 max-w-lg font-mono">
+            <p className="text-text-secondary dark:text-dark-text-secondary mb-8 max-w-lg font-mono">
               Building mobile and web applications focused on solving real-world problems.
             </p>
             <div className="flex gap-4">
@@ -37,7 +37,7 @@ export function Hero() {
                 download
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center gap-2 px-4 py-2 bg-black text-white rounded-md font-mono"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-black text-white dark:bg-white dark:text-black rounded-md font-mono transition-colors duration-300"
               >
                 <Download size={24} />
                 <span>Download my resume</span>
@@ -48,7 +48,7 @@ export function Hero() {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center gap-2 px-3 py-3 border border-black rounded-md hover:bg-black hover:text-white transition-colors"
+                className="inline-flex items-center gap-2 px-3 py-3 border border-black text-black dark:border-white dark:text-white rounded-md hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors duration-300"
               >
                 <FiGithub size={32} />
               </motion.a>
@@ -58,7 +58,7 @@ export function Hero() {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center gap-2 px-3 py-3 border border-black rounded-md hover:bg-black hover:text-white transition-colors"
+                className="inline-flex items-center gap-2 px-3 py-3 border border-black text-black dark:border-white dark:text-white rounded-md hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors duration-300"
               >
                 <FiLinkedin size={32} />
               </motion.a>
@@ -72,13 +72,13 @@ export function Hero() {
             className="order-1 md:order-2 flex justify-center"
           >
             <div className="relative w-64 h-64 md:w-80 md:h-80">
-              <div className="w-full h-full rounded-full bg-gray-200 overflow-hidden border-4 border-white shadow-lg">
+              <div className="w-full h-full rounded-full bg-gray-200 dark:bg-dark-surface overflow-hidden border-4 border-dark-surface dark:border-white shadow-lg">
                 <Image
                   src="/profile-photo.jpg"
                   alt="Tristan Andrei Tamani"
                   width={256}
                   height={256}
-                  className="object-cover w-full h-full"
+                  className="object-cover w-full h-full object-bottom"
                   priority
                 />
               </div>
