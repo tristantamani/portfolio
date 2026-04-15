@@ -65,13 +65,13 @@ const projects = [
   },
   {
     title: 'UE Admission Portal',
-    description: "A web clone of University of the East's online college admission portal with built with JS localStorage",
+    description: "A web clone of University of the East online college admission portal",
     screenshot: '/projects/ue-portal-screenshot.png',
     link: 'https://github.com/tristantamani/ue-admission-portal-clone',
   },
   {
     title: 'BookWarrior',
-    description: 'Library management dashboard for tracking book inventory, acquisitions, transactions, and vendor records',
+    description: 'Library dashboard for tracking book records, acquisitions, and borrower transactions',
     screenshot: '/projects/bookwarrior-screenshot.png',
     link: 'https://github.com/tristantamani/bookwarrior',
   },

@@ -86,7 +86,7 @@ export function Education() {
               </div>
               <div>
                 <h3 className="font-bold text-lg font-poppins mb-0">{uni.name}</h3>
-                <p className="text-text-secondary dark:text-dark-text-secondary font-mono mb-2">{uni.degree}</p>
+                <p className="text-text-secondary dark:text-dark-text-secondary text-md font-mono mb-2">{uni.degree}</p>
                 <p className="text-text-tertiary dark:text-dark-text-tertiary text-sm font-mono">{uni.years}</p>
               </div>
             </motion.div>
