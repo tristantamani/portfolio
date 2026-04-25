@@ -33,7 +33,7 @@ export function Hero() {
             </p>
             <div className="flex gap-4">
               <motion.a
-                href="/resume.pdf"
+                href="/Tristan_Tamani_Resume.pdf"
                 download
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
