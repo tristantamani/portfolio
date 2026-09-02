@@ -30,7 +30,7 @@ const universities = [
   {
     name: 'University of the East',
     degree: 'BS Computer Science',
-    years: '2023 — Expected Jan 2027',
+    years: '2023 — 2026',
     logo: '/education/ue-logo.png',
   },
   {

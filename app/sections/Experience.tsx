@@ -34,6 +34,22 @@ export function Experience() {
           <div className="rounded-lg p-6 flex items-start gap-8">
             <div className="w-20 h-20 rounded-lg flex items-center justify-center flex-shrink-0">
               <Image
+                src="/experience/devtastic-it-solutions-logo.png"
+                alt="Devtastic IT Solutions logo"
+                width={80}
+                height={80}
+                className="object-contain"
+              />
+            </div>
+            <div>
+              <h3 className="font-bold text-lg font-poppins mb-0">Flutter Developer</h3>
+              <p className="text-text-secondary dark:text-dark-text-secondary font-mono mb-2">Devtastic IT Solutions</p>
+              <p className="text-text-tertiary dark:text-dark-text-tertiary text-sm font-mono">May 2026 - August 2026</p>
+            </div>
+          </div>
+          <div className="rounded-lg p-6 flex items-start gap-8">
+            <div className="w-20 h-20 rounded-lg flex items-center justify-center flex-shrink-0">
+              <Image
                 src="/experience/big-pond-education-logo.png"
                 alt="Big Pond Education logo"
                 width={80}
@@ -42,8 +58,8 @@ export function Experience() {
               />
             </div>
             <div>
-              <h3 className="font-bold text-lg font-poppins mb-0">Big Pond Education PH</h3>
-              <p className="text-text-secondary dark:text-dark-text-secondary font-mono mb-2">Backend Developer Intern</p>
+              <h3 className="font-bold text-lg font-poppins mb-0">Backend Developer Intern</h3>
+              <p className="text-text-secondary dark:text-dark-text-secondary font-mono mb-2">Big Pond Education PH</p>
               <p className="text-text-tertiary dark:text-dark-text-tertiary text-sm font-mono">June 2025 - July 2025</p>
             </div>
           </div>

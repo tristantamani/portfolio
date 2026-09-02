@@ -26,10 +26,10 @@ export function Hero() {
               Tristan Andrei Tamani
             </h1>
             <p className="text-xl md:text-2xl mb-6 font-mono">
-              Computer Science Student
+              Freelance Developer
             </p>
             <p className="text-text-secondary dark:text-dark-text-secondary mb-8 max-w-lg font-mono">
-              Building mobile and web applications focused on solving real-world problems.
+              Developing software to solve my own problems and contributing to others who share the same sentiment.
             </p>
             <div className="flex gap-4">
               <motion.a

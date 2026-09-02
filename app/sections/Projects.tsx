@@ -28,21 +28,19 @@ const itemVariants = {
 }
 
 const tools = [
+  { name: 'Dart', image: '/tools/dart.png'},
+  { name: 'Flutter', image: '/tools/flutter.png'},
   { name: 'Kotlin', image: '/tools/kotlin.png' },
   { name: 'Jetpack Compose', image: '/tools/jetpack-compose.png' },
-  { name: 'Java', image: '/tools/java.png' },
   { name: 'HTML5', image: '/tools/html5.png' },
   { name: 'CSS3', image: '/tools/css3.png' },
   { name: 'JavaScript', image: '/tools/javascript.png' },
   { name: 'Bootstrap', image: '/tools/bootstrap.png' },
   { name: 'Node.js', image: '/tools/nodejs.png' },
   { name: 'MongoDB', image: '/tools/mongodb.png' },
-  { name: 'GitHub', image: '/tools/github.png' },
+  { name: 'Git', image: '/tools/git.png' },
   { name: 'Supabase', image: '/tools/supabase.png' },
 ]
-
-const toolsRow1 = tools.slice(0, 6)
-const toolsRow2 = tools.slice(6)
 
 const projects = [
   {
@@ -62,19 +60,7 @@ const projects = [
     description: 'Philippine sports news entertainment website for basketball, volleyball, football, and floorball',
     screenshot: '/projects/dublab-screenshot.png',
     link: '#',
-  },
-  {
-    title: 'UE Admission Portal',
-    description: "A web clone of University of the East online college admission portal",
-    screenshot: '/projects/ue-portal-screenshot.png',
-    link: 'https://github.com/tristantamani/ue-admission-portal-clone',
-  },
-  {
-    title: 'BookWarrior',
-    description: 'Library dashboard for tracking book records, acquisitions, and borrower transactions',
-    screenshot: '/projects/bookwarrior-screenshot.png',
-    link: 'https://github.com/tristantamani/bookwarrior',
-  },
+  }
 ]
 
 export function Projects() {
@@ -150,37 +136,21 @@ export function Projects() {
           className="mt-20"
         >
           <p className="text-text-secondary dark:text-dark-text-secondary mb-8 font-mono text-center">
-            Here are some of the tools I used to develop my projects
+            Here are some of the tools I used for development
           </p>
 
-          <div className="flex flex-col items-center gap-8">
-            <div className="flex justify-between w-full max-w-3xl px-4">
-              {toolsRow1.map((tool) => (
-                <div key={tool.name} className="w-20 h-20 flex items-center justify-center">
-                  <Image
-                    src={tool.image}
-                    alt={`${tool.name} icon`}
-                    width={96}
-                    height={96}
-                    className="object-contain"
-                  />
-                </div>
-              ))}
-            </div>
-
-            <div className="flex justify-between w-full max-w-3xl px-16 md:px-24">
-              {toolsRow2.map((tool) => (
-                <div key={tool.name} className="w-20 h-20 flex items-center justify-center">
-                  <Image
-                    src={tool.image}
-                    alt={`${tool.name} icon`}
-                    width={96}
-                    height={96}
-                    className="object-contain"
-                  />
-                </div>
-              ))}
-            </div>
+          <div className="grid grid-cols-3 sm:grid-cols-6 gap-8 justify-items-center items-center max-w-3xl mx-auto">
+            {tools.map((tool) => (
+              <div key={tool.name} className="w-20 h-20 flex items-center justify-center">
+                <Image
+                  src={tool.image}
+                  alt={`${tool.name} icon`}
+                  width={96}
+                  height={96}
+                  className="object-contain"
+                />
+              </div>
+            ))}
           </div>
         </motion.div>
       </div>
