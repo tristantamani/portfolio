@@ -28,18 +28,20 @@ const itemVariants = {
 }
 
 const tools = [
+  { name: 'HTML5', image: '/tools/html5.png' },
+  { name: 'CSS3', image: '/tools/css3.png' },
+  { name: 'JavaScript', image: '/tools/javascript.png' },
+  { name: 'TypeScript', image: '/tools/typescript.png' },
+  { name: 'Bootstrap', image: '/tools/bootstrap.png' },
   { name: 'Dart', image: '/tools/dart.png'},
   { name: 'Flutter', image: '/tools/flutter.png'},
   { name: 'Kotlin', image: '/tools/kotlin.png' },
   { name: 'Jetpack Compose', image: '/tools/jetpack-compose.png' },
-  { name: 'HTML5', image: '/tools/html5.png' },
-  { name: 'CSS3', image: '/tools/css3.png' },
-  { name: 'JavaScript', image: '/tools/javascript.png' },
-  { name: 'Bootstrap', image: '/tools/bootstrap.png' },
-  { name: 'Node.js', image: '/tools/nodejs.png' },
-  { name: 'MongoDB', image: '/tools/mongodb.png' },
   { name: 'Git', image: '/tools/git.png' },
+  { name: 'Claude', image: '/tools/claude.png' },
+  { name: 'Node', image: '/tools/nodejs.png' },
   { name: 'Supabase', image: '/tools/supabase.png' },
+  { name: 'MongoDB', image: '/tools/mongodb.png' },
 ]
 
 const projects = [
@@ -139,7 +141,7 @@ export function Projects() {
             Here are some of the tools I used for development
           </p>
 
-          <div className="grid grid-cols-3 sm:grid-cols-6 gap-8 justify-items-center items-center max-w-3xl mx-auto">
+          <div className="grid grid-cols-3 sm:grid-cols-7 gap-8 justify-items-center items-center max-w-4xl mx-auto">
             {tools.map((tool) => (
               <div key={tool.name} className="w-20 h-20 flex items-center justify-center">
                 <Image

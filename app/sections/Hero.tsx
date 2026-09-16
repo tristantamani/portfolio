@@ -29,7 +29,7 @@ export function Hero() {
               Freelance Developer
             </p>
             <p className="text-text-secondary dark:text-dark-text-secondary mb-8 max-w-lg font-mono">
-              Developing software to solve my own problems and contributing to others who share the same sentiment.
+              Developing software to solve my own problems and contributing to others who share the same ones.
             </p>
             <div className="flex gap-4">
               <motion.a
